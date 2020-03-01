@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3c.org/1999/xhtml"
       xmlns:h="http://java.sun.com/jsf/html"
@@ -6,6 +7,8 @@
  <h:head>
  </h:head>
  <h:body>
-    <p:inputText value="#{bean.value}" pt:placeholder="Watermark here"/>
+	 <h:form id="guess_form">
+	 <p:outputLabel id = "num" value="#{guessBean.numeroRandom}" style="display:none"/>
+	 </h:form>
  </h:body>
 </html>
