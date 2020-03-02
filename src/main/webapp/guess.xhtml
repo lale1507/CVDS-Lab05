@@ -8,7 +8,14 @@
  </h:head>
  <h:body>
 	 <h:form id="guess_form">
-	 <p:outputLabel id = "num" value="#{guessBean.numeroRandom}" style="display:none"/>
-	 </h:form>
+	 <p:outputLabel id = "numeroR" value="#{guessBean.numeroRandom}" style="display:none"/>
+     <p:inputText  id= "num" type="int" binding="#{input}" > 
+            <h:outputText value="Estado del juego"></h:outputText>
+            <h:outputText value="#{guessbackingBean.estado}"></h:outputText>
+            <h:outputText value="Premio acumulado"></h:outputText>
+            <h:outputText value="#{guessbackingBean.premioAcumulado}"></h:outputText>
+            <h:outputText value="Intentos"></h:outputText>
+            <h:outputText value="#{num}"></h:outputText>
+    </h:form>
  </h:body>
 </html>
