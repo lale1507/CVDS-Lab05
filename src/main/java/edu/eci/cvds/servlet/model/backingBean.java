@@ -13,6 +13,7 @@ public class backingBean {
     private int numeroRandom;
     private String estado;
 
+
     public backingBean(){
         restart();
     }
@@ -22,7 +23,7 @@ public class backingBean {
         numeroRandom = r.nextInt(11);
         numIntentos = new ArrayList<>();
         premioAcumulado = 100000;
-        estado = "no gana";
+        estado = "No gana";
     }
 
     public void guess(int num){
@@ -30,15 +31,15 @@ public class backingBean {
         if(num!=numeroRandom){
             premioAcumulado-=10000;
         }else{
-            estado = "gana";
+            estado = "Gana";
         }
     }
 
-    public ArrayList<Integer> getIntentos() {
+    public ArrayList<Integer> getNumIntentos() {
         return numIntentos;
     }
 
-    public void setIntentos(ArrayList<Integer> numIntentos) {
+    public void setNumIntentos(ArrayList<Integer> numIntentos) {
         this.numIntentos = numIntentos;
     }
 
