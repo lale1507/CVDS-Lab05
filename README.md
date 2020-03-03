@@ -64,4 +64,4 @@ Sale el código de error 301, porque lo que se está solicitando se movió de fo
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/808778ab71044192946b471d27e6c39f)](https://www.codacy.com/manual/lale1507/CVDS-Lab05?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=lale1507/CVDS-Lab05&amp;utm_campaign=Badge_Grade)
 
 ## CIRCLECI
-[![CircleCI](https://circleci.com/gh/cvds/CVDS-Lab05.svg)](https://app.circleci.com/github/lale1507/CVDS-Lab05/pipelines)
+[![lale1507](https://circleci.com/gh/cvds/CVDS-Lab05.svg)](https://app.circleci.com/github/lale1507/CVDS-Lab05/pipelines)
