@@ -1,6 +1,8 @@
 ﻿
 ### Escuela Colombiana de Ingeniería
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/44d5e967ec8743b5bd1b460d347ed14a)](https://app.codacy.com/manual/lale1507/CVDS-Lab05?utm_source=github.com&utm_medium=referral&utm_content=lale1507/CVDS-Lab05&utm_campaign=Badge_Grade_Settings)
+
 ## Paola A. Cuellar - Laura A. Bernal  
 
 ### MVC Primefaces Introduction
