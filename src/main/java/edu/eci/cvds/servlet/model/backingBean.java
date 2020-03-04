@@ -12,6 +12,7 @@ public class backingBean {
     private int premioAcumulado;
     private int numeroRandom;
     private String estado;
+    private int numeroEntra;
 
 
     public backingBean(){
@@ -27,6 +28,7 @@ public class backingBean {
     }
 
     public void guess(int num){
+        numeroEntra=num;
         numIntentos.add(num);
         if(num!=numeroRandom){
             premioAcumulado-=10000;
