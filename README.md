@@ -27,8 +27,8 @@ Sale el código de error 301, porque lo que se está solicitando se movió de fo
 
 6. ¿Cuáles son las diferencias con los diferentes parámetros?
 
-~ **curl -V** Al usar el parámetro -v en el comando cURL, se habilita el modo detallado e imprimirá los detalles de el sitio de una forma completa  
-~ **curl _I** Los encabezados HTTP permiten que el servidor web remoto realice el proceso de envió de información adicional sobre sí junto con la solicitud real, esto es usado para ofrecer al cliente detalles sobre cómo se está administrando la solicitud actual.
+~ *curl -V* Al usar el parámetro -v en el comando cURL, se habilita el modo detallado e imprimirá los detalles de el sitio de una forma completa  
+~ *curl _I* Los encabezados HTTP permiten que el servidor web remoto realice el proceso de envió de información adicional sobre sí junto con la solicitud real, esto es usado para ofrecer al cliente detalles sobre cómo se está administrando la solicitud actual.
 
 ## Parte II.
 
@@ -58,7 +58,22 @@ Sale el código de error 301, porque lo que se está solicitando se movió de fo
 ![](img/diagramaClases.PNG)
 
 ## Parte IV. - Frameworks Web MVC – Java Server Faces / Prime Faces
-## cambios
+
+9. Si no hay errores, la aplicación debería quedar accesible en la URL: [http://localhost:8080/faces/guess.xhtml](http://localhost:8080/faces/guess.xhtml)
+
+![](img/PantallaPrincipal.PNG)
+
+10. b.  ¿Qué valor tiene cada uno?  
+
+Un valor diferente
+
+![](img/Pruebas.PNG)
+
+c. use la anotación @SessionScoped en lugar de @ApplicationScoped. ¿Cuál es la diferencia entre los backing-beans de sesión y los de aplicación?  
+
+en los de aplicación son individuales los datos del número a adivinar y los números que ha intentado, en el de sesión comparten el número a adivinar y muestran el número de intento de la otra persona.
+
+![](img/SessionTest.PNG)
 
 ## CODAY
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/808778ab71044192946b471d27e6c39f)](https://www.codacy.com/manual/lale1507/CVDS-Lab05?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=lale1507/CVDS-Lab05&amp;utm_campaign=Badge_Grade)
