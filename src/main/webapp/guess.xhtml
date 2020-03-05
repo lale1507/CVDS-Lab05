@@ -5,6 +5,8 @@
 <h:head>
 </h:head>
 <h:body style="background-color: deepskyblue; text-align:center;">
+
+
     <h:form id="guess_form">
         <h2 style="text-align:center;" title="I'm a header"> ADIVINA UN NUMERO </h2>
         <p:outputLabel value="#{guessBeans.getNumeroRandom()}" style="display:none" />
@@ -15,7 +17,7 @@
         <br></br>
 
         <p:commandButton value="Probar" update="guess_form" actionListener="#{guessBean.guess(input.value)}"
-            style="background-color: chartreuse;" styleClass="ui-priority-primary" ></p:commandButton>
+            style="background-color: chartreuse;"></p:commandButton>
         <p:commandButton value="Reiniciar" update="guess_form" actionListener="#{guessBean.restart()}"
             style="background-color: darkorchid;"></p:commandButton>
 

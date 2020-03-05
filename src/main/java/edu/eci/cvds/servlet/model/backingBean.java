@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.Random;
 
 @ManagedBean(name = "guessBean")
-@ApplicationScoped
+@SessionScoped
 public class backingBean {
 
     private ArrayList<Integer> numIntentos;
