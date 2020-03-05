@@ -15,9 +15,21 @@
         <br></br>
 
         <p:commandButton value="Probar" update="guess_form" actionListener="#{guessBean.guess(input.value)}"
-            style="background-color: chartreuse;"></p:commandButton>
+            style="background-color: chartreuse;" styleClass="ui-priority-primary" ></p:commandButton>
         <p:commandButton value="Reiniciar" update="guess_form" actionListener="#{guessBean.restart()}"
             style="background-color: darkorchid;"></p:commandButton>
+
+        <br></br>
+        <p>Numero de intentos: </p>
+        <p:outputLabel value="#{guessBean.getNumIntentos().size()}" />
+
+        <br></br>
+        <p>El premio es: </p>
+        <p:outputLabel value="#{guessBean.getPremioAcumulado()}" />
+
+        <br></br>
+        <p>Estado del Juego: </p>
+        <p:outputLabel value="#{guessBean.getEstado()}" />
 
         <br></br>
         <br></br>
