@@ -1,24 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html>
-<html xmlns="http://www.w3c.org/1999/xhtml" 
-      xmlns:h="http://java.sun.com/jsf/html" 
-      xmlns:p="http://primefaces.org/ui"
-      xmlns:pt="http://xmlns.jcp.org/jsf/passthrough">
+<html xmlns="http://www.w3c.org/1999/xhtml" xmlns:h="http://java.sun.com/jsf/html" xmlns:p="http://primefaces.org/ui"
+    xmlns:pt="http://xmlns.jcp.org/jsf/passthrough">
 <h:head>
 </h:head>
-<h:body style="background-color: deepskyblue;" >
+<h:body style="background-color: deepskyblue; text-align:center;">
     <h:form id="guess_form">
-        <h2 title="I'm a header"> ADIVINA UN NUMERO</h2>
-        <h:outputLabel for="name" value="Coloque un numero:" />
-        <p:inputText type="number" name="numero" value="#{guessBean.numeroRandom}"></p:inputText>
-         
+        <h2 style="text-align:center;" title="I'm a header"> ADIVINA UN NUMERO </h2>
+        <p:outputLabel value="#{guessBeans.getNumeroRandom()}" style="display:none" />
+        <br>
+        <p:inputText binding="#{input}" /></br>
+
         <br></br>
         <br></br>
 
-        <p:commandButton value="Probar" actionListener="#{guessBean.guess(guessBean.numeroEntra)}" update="guess_form" style = "background-color: chartreuse;"></p:commandButton>
-        <p:commandButton value="Reiniciar" actionListener="#{guessBean.restart}" update="guess_form" style = "background-color: darkorchid;"></p:commandButton>
-        
+        <p:commandButton value="Probar" update="guess_form" actionListener="#{guessBean.guess(input.value)}"
+            style="background-color: chartreuse;"></p:commandButton>
+        <p:commandButton value="Reiniciar" update="guess_form" actionListener="#{guessBean.restart()}"
+            style="background-color: darkorchid;"></p:commandButton>
 
+        <br></br>
+        <br></br>
+
+        <p:dataTable var="numIntentos" value="#{guessBean.getNumIntentos()}" style="text-align: center;">
+            <p:column headerText="Numeros con los que ya intento:">
+                <h:outputText value="#{numIntentos}" />
+            </p:column>
+        </p:dataTable>
     </h:form>
 </h:body>
 
